@@ -1,0 +1,43 @@
+2019-11-04 19:17:05,672 - Server::_setup_control_socket: setting up control channel on port 2121.
+2019-11-04 19:17:05,674 - Server::_setup_control_socket: successfully setup control channel.
+2019-11-04 19:17:09,074 - ServerThread::__init__: starting thread for client | ip: 127.0.0.1, port: 58712
+2019-11-04 19:17:09,074 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 220 Welcome to Owen's FTP Server
+2019-11-04 19:17:20,969 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'USER admin\r\n'
+2019-11-04 19:17:20,970 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 331 Specify the password.
+2019-11-04 19:17:23,074 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'PASS test123\r\n'
+2019-11-04 19:17:23,075 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 230 Login successfull.
+2019-11-04 19:17:30,958 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'PWD\r\n'
+2019-11-04 19:17:30,959 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 257 '/Users/test/Documents/Classes/Computer-Networks/ftp-server' is the current dir.
+2019-11-04 19:17:42,036 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'CDUP\r\n'
+2019-11-04 19:17:42,037 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 200 OK
+2019-11-04 19:17:45,091 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'PWD\r\n'
+2019-11-04 19:17:45,092 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 257 '/Users/test/Documents/Classes/Computer-Networks' is the current dir.
+2019-11-04 19:17:58,214 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'CWD /Users/test/Documents/Classes/Computer-Networks/ftp-server\r\n'
+2019-11-04 19:17:58,214 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 250 Dir changed.
+2019-11-04 19:18:16,730 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'EPRT |1|192.168.1.154|1234|\r\n'
+2019-11-04 19:18:16,731 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 200 EPRT cmd successfull
+2019-11-04 19:18:24,164 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'PORT 192,168,1,154,21,159\r\n'
+2019-11-04 19:18:24,164 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 200 PORT cmd successfull.
+2019-11-04 19:18:27,286 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'EPSV\r\n'
+2019-11-04 19:18:27,286 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 229 Entering EPSV mode (|||33690|)
+2019-11-04 19:18:30,191 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'LIST\r\n'
+2019-11-04 19:18:30,191 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 150 Sending dir listing.
+2019-11-04 19:18:30,191 - ServerThread::_send_data: | ip: 127.0.0.1, port: 58712
+2019-11-04 19:18:30,192 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 226 Transfer complete.
+2019-11-04 19:18:33,346 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'PASV\r\n'
+2019-11-04 19:18:33,362 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 227 Entering PASV mode (192,168,1,154,11,11).
+2019-11-04 19:18:44,581 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'STOR ftp.log\r\n'
+2019-11-04 19:18:44,581 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 150 OK to send data.
+2019-11-04 19:18:44,582 - ServerThread::_send_data: | ip: 127.0.0.1, port: 58712
+2019-11-04 19:18:47,376 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 226 Transfer complete.
+2019-11-04 19:19:26,532 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'RETR serverlog.txt\r\n'
+2019-11-04 19:19:26,532 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 425 Use PORT or PASV first.
+2019-11-04 19:19:29,087 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'PASV\r\n'
+2019-11-04 19:19:29,091 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 227 Entering PASV mode (192,168,1,154,177,85).
+2019-11-04 19:19:39,528 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'RETR serverlog.txt\r\n'
+2019-11-04 19:19:39,529 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 150 Sending file.
+2019-11-04 19:19:39,530 - ServerThread::_send_data: | ip: 127.0.0.1, port: 58712
+2019-11-04 19:19:39,530 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 226 Transfer complete.
+2019-11-04 19:19:56,286 - ServerThread::_run_ftp_cmd: | ip: 127.0.0.1, port: 58712 request: b'QUIT\r\n'
+2019-11-04 19:19:56,286 - ServerThread::_send: | ip: 127.0.0.1, port: 58712 response: 221 Goodbye
+2019-11-04 19:19:56,286 - ServerThread::run: closing thread | ip: 127.0.0.1, port: 58712
