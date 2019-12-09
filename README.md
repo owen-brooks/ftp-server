@@ -1,11 +1,11 @@
 # ftp-server
 > sockets based, threaded ftp server built in python
 
-## Requirements
+## requirements
 
 * python3
 
-## How to use
+## how to use
 To see example usage of the  server simply run:
 
 ```
